@@ -1,0 +1,31 @@
+#include <stdio.h>
+
+void print_ar(int ar[5]);
+
+main()
+{
+	int i, j, k, cnt=0;
+	int ar[2][3][5];
+	
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			for(k=0;k<5;k++)
+			{
+			ar[i][j][k]= ++cnt;
+			}
+		}
+	}
+	
+	for(i=0;i<2;i++)
+	{
+		for(j=0;j<3;j++)
+		{
+			for(k=0;k<5;k++)
+			{
+			printf("%d\n", ar[i][j][k]);
+			}
+		}
+	}
+}
