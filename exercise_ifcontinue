@@ -9,7 +9,7 @@ main()
 		if(i%3 != 0)
 		{
 			printf("%d는 3의 배수 아님\n", i);
-			continue;				
+			continue;	// continue 존재이유 모르겠음 
 		}
 		sum += i;
 	} while(i);
