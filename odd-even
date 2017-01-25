@@ -1,0 +1,15 @@
+#include <stdio.h>
+ 
+main()
+{
+	int num;
+	scanf("%d", &num); 
+	if(num % 2 == 0)
+	{
+		printf("짝수 입력했네요.");
+	}
+	else
+	{
+		printf("홀수 입력했네요.");
+	}
+}
