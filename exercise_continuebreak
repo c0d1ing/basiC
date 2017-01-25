@@ -1,0 +1,14 @@
+#include <stdio.h>
+ 
+main()
+{
+	int i=0, sum=0;
+	while(i<=100)
+	{
+		i++ ;
+		if(i%2 == 1) continue; // if가 참일 경우 while로 돌아감 
+		sum += i; // if가 거짓일 경우 실행. 결국 짝수만 더해 짐 
+		if(sum > 1000) break;
+	}
+	printf("i의 값이 %d일 때 짝수들의 합이 1000을 넘는다.", i);
+}
