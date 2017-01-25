@@ -1,0 +1,20 @@
+#include <stdio.h>
+ 
+void kkd(int num);
+
+main() // 컴파일러가 void 에러냄. 그냥 없이 해도 됨. 
+{
+	int num;
+	printf("몇 단?\n");
+	scanf("%d", &num);
+	kkd(num);
+}
+
+void kkd(int num)
+{
+	int i;
+	for(i=1;i<19;i++)
+	{
+		printf("%d * %d = %d\n", num, i, num*i);
+	}
+}
