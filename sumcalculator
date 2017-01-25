@@ -1,0 +1,13 @@
+#include <stdio.h>
+ 
+main()
+{
+	int a=1, k=0;
+	printf("0을 누르기 전까지의 입력값을 더해줍니다\n") ;
+	while(a)
+	{
+		scanf("%d", &a);
+		k += a;
+	}
+	printf("지금까지 누른 숫자의 합은 %d입니다.", k);
+ }
