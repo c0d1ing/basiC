@@ -1,0 +1,37 @@
+#include <stdio.h>
+ 
+main()
+{
+	int menu;
+	do
+	{
+		printf("\n") ;
+		printf("점심 메뉴 선택\n") ;	
+		printf("1. 다와푸드\n") ;
+		printf("2. 프레지덴테 피자와 파스타\n") ;		
+		printf("3. 베트남 쌀국수\n") ;
+		printf("4. 자니로켓 로켓더블\n") ;
+		printf("\n") ;
+		scanf("%d", &menu);
+		if(menu ==1)
+		{
+			printf("식권 고고\n");
+		 } 
+		else if (menu ==2)
+		{
+			printf("마르게리타 고고\n");
+		}
+		else if (menu ==3)
+		{
+			printf("소고기 쌀국수  고고\n");
+		}
+			else if (menu ==4)
+		{
+			printf("신메뉴 있나 확인  고고\n");
+		}
+		else
+		{
+			printf("그걸 또 못 고르나?!\n");
+		}	
+	}	while(1);
+ }
