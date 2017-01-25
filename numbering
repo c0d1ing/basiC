@@ -1,0 +1,11 @@
+#include <stdio.h>
+main()
+{
+	int a, k;
+	printf("숫자가 몇 까지 나오길 바라나요?") ;
+	scanf("%d", &k);
+	for(a=1;a<=k;++a)
+	{
+		printf("%d\n", a);
+	}
+ }
