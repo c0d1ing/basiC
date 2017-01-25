@@ -1,0 +1,17 @@
+#include <stdio.h>
+main()
+{
+	int i, j, line;
+	
+	printf("몇 줄?\n");
+	scanf("%d",&line);
+	
+	for(i=0;i<line;i++)
+	{
+		for(j=0;j<=i;j++) // j<=i에 주의 
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+ } 
