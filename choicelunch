@@ -1,0 +1,18 @@
+#include <stdio.h>
+ 
+main()
+{
+	int menu;
+
+	do
+	{
+		printf("점심 메뉴 선택\n") ;	
+		printf("1. 다와푸드\n") ;
+		printf("2. 프레지덴테 피자와 파스타\n") ;		
+		printf("3. 베트남 쌀국수\n") ;
+		printf("4. 자니로켓 로켓더블\n") ;
+		
+		scanf("%d", &menu);
+	}	while(menu<1 || menu > 4);
+	printf("선택하신 메뉴는 %d번 입니다.", menu);
+ }
