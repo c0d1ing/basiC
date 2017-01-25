@@ -1,0 +1,13 @@
+#include <stdio.h>
+ 
+main()
+{
+	int a, k, sum=0;
+	printf("몇 까지의 합을 바라나요?") ;
+	scanf("%d", &k);
+	for(a=0;a<=k;a +=2)
+	{
+		sum += a;
+	}
+	printf("%d\n", sum);
+ }
