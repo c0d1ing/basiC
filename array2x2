@@ -1,0 +1,34 @@
+#include <stdio.h>
+
+void print_ar(int ar[5]);
+
+main()
+{
+	int i, j, k=0;
+	int ar[3][5];
+	
+	for(i=0;i<3;i++)
+	{
+		for(j=0;j<5;j++)
+		{
+			ar[i][j]=k;
+			k++;
+		}
+	}
+	
+	int a;
+	for(a=0;a<5;a++)
+	{
+		printf("첫 번째 배열의 값 : %d\n", ar[0][a]);
+	}
+
+	for(a=0;a<5;a++)
+	{
+		printf("두 번째 배열의 값 : %d\n", ar[1][a]);
+	}
+	for(a=0;a<5;a++)
+	{
+		printf("세 번째 배열의 값 : %d\n", ar[2][a]);
+	}
+}
+	
