@@ -1,0 +1,17 @@
+#include <stdio.h>
+
+swab(int* pa, int* pb)
+{
+	int tmp;
+	tmp = *pa;
+	*pa = *pb;
+	*pb = tmp;
+}
+
+main()
+{
+	int a=1, b=4;
+	printf("a=%d, b=%d\n", a, b);
+	swab(&a, &b);
+	printf("a=%d, b=%d\n", a, b);
+}
