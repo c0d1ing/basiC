@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+modi(int* pi)
+{
+	printf("i value = %d\n", *pi); // 처음시행되며 입력된 i값 
+	*pi = 222; // 5번 시행후 i값 변경 
+}
+
+main()
+{
+	int i = 111;
+	modi(&i); // 처음 시행하며 5번줄로 
+	printf("i value = %d\n", i);// 변경된 i값 
+}
+
