@@ -1,0 +1,12 @@
+#include <stdio.h>
+
+main ()
+{
+	int i=5;
+	int* pi;
+	pi=&i;
+
+	printf("i value = %d\n", i);	
+	printf("i mem add=%d\n", &i);
+	printf("i mem add=%d\n", pi);
+}
