@@ -1,0 +1,24 @@
+#include <stdio.h>
+print_string(char* pstring)
+{
+	while(*pstring)
+	{
+		printf("%c", *pstring);
+		pstring++;
+	}
+	printf("\n");
+} 
+ 
+main()
+{
+	char str[] = "LEE Haehwang";
+	char* pstr = str;
+	
+	print_string(str);
+	print_string(pstr);
+	print_string(&str[0]);
+	print_string(&str[4]);
+	
+	pstr[3]=0;
+	print_string(str);
+} 
