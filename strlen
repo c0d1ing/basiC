@@ -1,0 +1,15 @@
+#include <stdio.h>
+
+int string_length(char* pstr)
+{
+	int len = 0;
+	while(*pstr++) len++;
+	return len;
+}
+
+main()
+{
+	int len;
+	len = string_length("Lee Haehwang");
+	printf("length : %d", len);
+}
