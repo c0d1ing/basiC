@@ -1,0 +1,9 @@
+# include <stdio.h>
+
+main()
+{
+	int a, b, c;
+	scanf("%d", &a);
+	scanf("%d", &b);
+	(a == b) ? printf("same") : (a>b ? printf("d%", a) : printf("%d", b));
+}
